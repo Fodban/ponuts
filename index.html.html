@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>$PONUTS — Donuts. Nuts. Chaos.</title>
+<meta name="description" content="$PONUTS on Robinhood Chain. Donuts, nuts, and pure chaos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Quicksand:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">$PONUTS</a>
+    <ul class="nav-links">
+      <li><a href="#chart">Chart</a></li>
+      <li><a href="#how-to-buy">How to Buy</a></li>
+      <li><a href="#community">Community</a></li>
+    </ul>
+    <a href="#how-to-buy" class="nav-cta">Buy $PONUTS</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  </div>
+  <div class="mobile-links" id="mobileLinks">
+    <a href="#chart">Chart</a>
+    <a href="#how-to-buy">How to Buy</a>
+    <a href="#community">Community</a>
+    <a href="#how-to-buy" class="nav-cta" style="text-align:center; margin-top:10px;">Buy $PONUTS</a>
+  </div>
+</nav>
+
+<div class="ticker">
+  <span class="sr-only">Dip your nuts, eat that dip. $PONUTS</span>
+  <div class="ticker-track" aria-hidden="true">
+    <span>DIP YOUR NUTS, EAT THAT DIP. &nbsp;$PONUTS&nbsp; &#8226;</span>
+    <span>DIP YOUR NUTS, EAT THAT DIP. &nbsp;$PONUTS&nbsp; &#8226;</span>
+    <span>DIP YOUR NUTS, EAT THAT DIP. &nbsp;$PONUTS&nbsp; &#8226;</span>
+    <span>DIP YOUR NUTS, EAT THAT DIP. &nbsp;$PONUTS&nbsp; &#8226;</span>
+    <span>DIP YOUR NUTS, EAT THAT DIP. &nbsp;$PONUTS&nbsp; &#8226;</span>
+    <span>DIP YOUR NUTS, EAT THAT DIP. &nbsp;$PONUTS&nbsp; &#8226;</span>
+    <span>DIP YOUR NUTS, EAT THAT DIP. &nbsp;$PONUTS&nbsp; &#8226;</span>
+    <span>DIP YOUR NUTS, EAT THAT DIP. &nbsp;$PONUTS&nbsp; &#8226;</span>
+    <span>DIP YOUR NUTS, EAT THAT DIP. &nbsp;$PONUTS&nbsp; &#8226;</span>
+    <span>DIP YOUR NUTS, EAT THAT DIP. &nbsp;$PONUTS&nbsp; &#8226;</span>
+    <span>DIP YOUR NUTS, EAT THAT DIP. &nbsp;$PONUTS&nbsp; &#8226;</span>
+    <span>DIP YOUR NUTS, EAT THAT DIP. &nbsp;$PONUTS&nbsp; &#8226;</span>
+  </div>
+</div>
+
+<header class="hero" id="top">
+  <div class="shell-flecks" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="hero-eyebrow mono">ROBINHOOD CHAIN &middot; LIVE</p>
+      <h1 class="hero-title">$PONUTS</h1>
+      <p class="hero-tagline">Donuts. Nuts. Chaos. Meet P — proud, round, and completely unbothered.</p>
+
+      <div class="ca-row">
+        <span class="ca-label mono">CA</span>
+        <span class="ca-value mono" id="caValue">0xFD3b3752CbaEa6B17E35C3602B938AbFf070807</span>
+        <button class="copy-btn" id="copyBtn" type="button">Copy</button>
+      </div>
+
+      <div class="hero-actions">
+        <a href="https://app.uniswap.org/swap?outputCurrency=0xFD3b3752CbaEa6B17E35C3602B938AbFf070807&chain=robinhood" target="_blank" rel="noopener" class="btn btn-primary">Buy $PONUTS</a>
+        <a href="#chart" class="btn btn-ghost">View Chart</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="images/QlTrzFrU_400x400.jpg" alt="Ponuts mascot: a shiny P-shaped character with walnut feet, pointing down at them" width="400" height="400">
+    </div>
+  </div>
+</header>
+
+<section class="chart-section" id="chart">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="section-label">LIVE MARKET</p>
+      <h2 class="section-title">Watch it move</h2>
+      <p class="section-desc">Real-time price action, straight from Dexscreener on Robinhood Chain.</p>
+    </div>
+    <div class="chart-frame reveal">
+      <iframe
+        src="https://dexscreener.com/robinhood/0xFD3b3752CbaEa6B17E35C3602B938AbFf070807?embed=1&theme=light&trades=0&info=0"
+        title="$PONUTS live chart on Dexscreener"
+        loading="lazy"
+        onerror="this.style.display='none'; document.getElementById('chartFallback').style.display='flex';">
+      </iframe>
+      <div class="chart-fallback" id="chartFallback" style="display:none;">
+        <p>Chart failed to load.</p>
+        <a href="https://dexscreener.com/robinhood/0xFD3b3752CbaEa6B17E35C3602B938AbFf070807" target="_blank" rel="noopener" class="btn btn-ghost">Open on Dexscreener</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-to-buy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="section-label">GET IN</p>
+      <h2 class="section-title">How to buy $PONUTS</h2>
+      <p class="section-desc">Robinhood Chain is a newer EVM network, so a couple of extra steps vs. a typical buy.</p>
+    </div>
+
+    <ol class="steps reveal">
+      <li class="step">
+        <div class="step-content">
+          <h3>Get an EVM wallet</h3>
+          <p>Install <a href="https://metamask.io" target="_blank" rel="noopener">MetaMask</a> or another EVM-compatible wallet on your phone or browser.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-content">
+          <h3>Add Robinhood Chain</h3>
+          <p>Add Robinhood Chain to your wallet (Chain ID 4663) — most wallets will prompt you automatically the first time you connect to a Robinhood Chain app like Uniswap.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-content">
+          <h3>Bridge or fund ETH</h3>
+          <p>You'll need ETH on Robinhood Chain for gas and swapping. Bridge it over or fund it directly through your wallet provider.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-content">
+          <h3>Swap on Uniswap</h3>
+          <p>Paste the contract address below into Uniswap, enter the amount of ETH to spend, and confirm the swap.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="buy-cta-row">
+      <a href="https://app.uniswap.org/swap?outputCurrency=0xFD3b3752CbaEa6B17E35C3602B938AbFf070807&chain=robinhood" target="_blank" rel="noopener" class="btn btn-primary">Buy on Uniswap</a>
+      <span class="buy-note mono">CA:  &mdash; always verify before you swap</span>
+    </div>
+  </div>
+</section>
+
+<section id="memes">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="section-label">MEME DUMP</p>
+      <h2 class="section-title">Fresh out of the box</h2>
+      <p class="section-desc">Send your memes over and I'll drop them in here.</p>
+    </div>
+
+    <!--
+      To add a real meme: replace a tile's inner content with an <img>, e.g.
+
+      <figure class="meme-tile">
+        <img src="assets/meme-1.jpg" alt="Describe the meme in a few words">
+      </figure>
+
+      Drop the file in /assets first, keep class="meme-tile", delete unused placeholders.
+    -->
+    <div class="meme-grid reveal">
+      <figure class="meme-tile placeholder">
+        <img src="images/HRdkJISa8AAFbBy.jpg" alt="A donut and a walnut shaking hands, with the text 'Donuts & Nuts: United'">
+        <span>+ Add meme</span></figure>
+      <figure class="meme-tile placeholder">
+        <img src="images/HReIlZnW0AYxC_v.jpg" alt="A donut and a walnut shaking hands, with the text 'Donuts & Nuts: United'"> 
+        <span>+ Add meme</span></figure>
+      <figure class="meme-tile placeholder">
+        <img src="images/HRh1KIJW4AAvuBo.jpg" alt="A donut and a walnut shaking hands, with the text 'Donuts & Nuts: United'">
+        <span>+ Add meme</span></figure>
+      <figure class="meme-tile placeholder">
+        <img src="images/HRhz8q-bsAAaRcF.jpg" alt="A donut and a walnut shaking hands, with the text 'Donuts & Nuts: United'">
+        <span>+ Add meme</span></figure>
+      <figure class="meme-tile placeholder">
+        <img src="images/HRiVe1WbsAE2GUc.jpg" alt="A donut and a walnut shaking hands, with the text 'Donuts & Nuts: United'">
+        <span>+ Add meme</span></figure>
+      <figure class="meme-tile placeholder">
+        <img src="images/HRjDlFkXQAACTS0.jpg" alt="A donut and a walnut shaking hands, with the text 'Donuts & Nuts: United'">
+        <span>+ Add meme</span></figure>
+    </div>
+  </div>
+</section>
+
+<section class="community" id="community">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="section-label">JOIN IN</p>
+      <h2 class="section-title">Come get weird with us</h2>
+      <p class="section-desc">Charts, memes, and questionable jokes about nuts. All welcome.</p>
+    </div>
+    <div class="social-row reveal">
+      <a href="https://x.com/ponsnuts" target="_blank" rel="noopener" class="social-btn">Twitter / X &#8594;</a>
+      <a href="https://t.me/ponutsarmy" target="_blank" rel="noopener" class="social-btn">Telegram &#8594;</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <span class="footer-ca mono">CA: 0xFD3b3752CbaEa6B17E35C3602B938AbFf070807</span>
+      <span class="footer-ca">&copy; <span id="year"></span> $PONUTS</span>
+    </div>
+    <p class="footer-disclaimer">Ponuts is not associated with any person, brand or organization depicted or referenced..</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
